@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(teal, violet);
+  height: 100vh;
+  align-content: center;
+}
+main {
+  background-color: rgba(240, 255, 255, 0.2);
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 8%;
+  width: 50%;
+  height: 70%;
+  margin: 0 auto;
+}
+h1 {
+  color: tan;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+#Display {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
