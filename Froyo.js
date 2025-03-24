@@ -14,11 +14,16 @@ function FindDuplicates(input) {
 }
 document.addEventListener("DOMContentLoaded", function () {
   const results = document.getElementById("Display");
+  let displayText = "";
   for (const flavor in Flavors) {
-    results.textContent = `${results.textContent}  ${flavor}: ${Flavors[flavor]}.`;
+    displayText += `${flavor}: ${Flavors[flavor]}\n`;
   }
+  results.textContent = displayText;
 });
 
 const Prompt = "Please enter a comma seperated list of froyo flavors:";
-let userInput = prompt(Prompt, "chocolate, coffee, coffee, vanilla, chocolate");
+let userInput = prompt(
+  Prompt,
+  "vanilla,vanilla,vanilla,strawberry,coffee,coffee"
+);
 FindDuplicates(userInput);
